@@ -10,6 +10,11 @@
 <script>
 export default {
   name: "SelectUsername",
+  created() {
+    const Wallet = require('../wallet.js');
+    const o = new Wallet();
+    console.log(o.display());
+  },
   data() {
     return {
       username: "",
